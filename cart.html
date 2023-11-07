@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MaBoutique en Ligne - Panier</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MaBoutique en Ligne</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="products.html">Produits</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Mon Panier</h2>
+        <div class="cart-item">
+            <img src="product1.jpg" alt="Produit 1">
+            <h3>Produit 1</h3>
+            <p>Prix : $10.00</p>
+            <input type="number" value="1" min="1">
+            <button onclick="updateCart(1)">Mettre à jour</button>
+            <button onclick="removeFromCart(1)">Supprimer</button>
+        </div>
+        <!-- Ajoutez plus d'articles du panier ici -->
+        <p>Total : $<span id="totalPrice">10.00</span></p>
+        <button onclick="checkout()">Paiement</button>
+    </main>
+
+    <footer>
+        &copy; 2023 MaBoutique en Ligne
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
